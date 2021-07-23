@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="shortcut icon" type="image/jpg" href="./images/logo_moon.png"/> 
+    <link rel="stylesheet" type="text/css" href="form.css"/>
+    <title>FeedbackForm</title>
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <img src="images/logo_moon.png" class="logo"/>
+    <form>
+        <div class="container">
+        <p>First Name: <input type="text" name="first" class="first"/></p><br/>
+        <p>Last Name: <input type="text" name="last" class="last"/></p><br/>
+        <p>Age: <input type="text" name="age" class="age"/></p><br/>
+        <p>Email id: <input type="text" name="email" class="id"/></p><br/>
+        <p>Mobile Number: <input type="text" name="number" class="number"/></p><br/>
+        </div>
+        <div class="parent">
+        <p>Gender<br/>
+        <input type="radio" name="gender"/> Male<br/>
+        <input type="radio" name="gender"/> Female</p><br/>
+        <p>Rate the product<br/>
+        <input type="radio" name="rate"/> 1 (Great)<br/>
+        <input type="radio" name="rate"/> 2 (Good)<br/>
+        <input type="radio" name="rate"/> 3 (Bad)<br/>
+        </p><br/>
+        <p>Types of watch you like the most?<br/>
+        <input type="checkbox" name="type"/> Analog<br/>
+        <input type="checkbox" name="type"/> Automatic<br/>
+        <input type="checkbox" name="type"/> Digital<br/>
+        <input type="checkbox" name="type"/> Diving<br/>
+        </p><br/>
+        <p>Suggestions</p>
+        <textarea name="comments" rows="5" cols="40"></textarea><br/>
+        <input type="submit" value="Submit"/>
+        </div>
+        
+    </form>
+</body>
+</html>
