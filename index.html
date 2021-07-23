@@ -4,47 +4,55 @@
         <link rel="stylesheet" href="styles.css">
         <meta charset="UTF-8">
         <link rel="shortcut icon" type="image/jpg" href="./images/logo_moon.png"/>  
-        
+      
     <title>Cool Moon</title>
     </head>
-    <body>
+    <body onload="checkCookie()">
+       
         <div class="container"> 
             <div class="navbar">
                 <img src="images/logo_moon.png" class="logo">
                 <nav>
                     <ul>
-                        <li><a href=""><b>Home</b></a></li>
-                        <li><a href=""><b>About</b></a></li>
-                        <li><a href=""><b>Collections</b></a></li>
-                        <li><a href=""><b>Special Offers</b></a></li>
+                        <li><a href="index.html"><b>Home</b></a></li>
+                        <li><a href="about.html"><b>About</b></a></li>
+                        <li><a href="index.html" onclick=""><b>Collections</b></a></li>
+                        <li><a href="" id="offers"><b>Special Offers</b></a></li>
                     </ul>
                 </nav>
-                <a href="" class="btn1">Login</a>
+                <p id="login"></p>
+                <a href="" class="btn1"  onclick="getValue()">Login</a>
                 &nbsp;
                 &nbsp;
-                <a href="" class="btn1">SignUp</a>
+            
+                <a href="" class="btn1" onclick="">SignUp</a>
+                
                 &nbsp;
                 &nbsp;
+                <a href="form.xhtml" onclick="">
                 <img src="images/cart.png" class="cart">
+            </a>
+                
             </div>
             <div class="content">
-                <a href="" class="btn">New Arrivals</a>
-                <h1>Welcome to <br>Cool Moon</h1>
-                <p>Keep your every move Cool </p>
+                <p id="button"></p>
+                <a href=""class="btn" id="button" onclick="msg()" >New Arrivals</a>
+                 <h1 id="heading" onclick="elementchange()">Welcome to <br>Cool Moon</h1>
+                <p id="p2" onclick="colourchange()">Keep your every move Cool </p>
             </div>
             <img src="images/feature_image.png" class="feature-img">
         </div>
         <div class="showcase">
             <div class="about">
                 <h1><b>Shop For</b></h1>
-                <img src="images/men_watch.png" class="men_watch">
+                <img id="image" src="images/men_watch.png" class="men_watch" onclick="imagechange()">
                 <a href="" class="btn2 mens">Men's</a>
                 <img src="images/kid.png" class="kid_watch">
-                <a href="" class="btn2 kid" >Kids</a>
+                <a href="" class="btn2 kid" id="time" onclick="displayDate()">Kids</a>
                 <img src="images/smart_watch.png" class="smart_watch">
-                <a href="" class="btn2 smart" >Smart Bands</a>
-                <img src="images/womenwatch.png"  class="womenwatch">
-                <a href="" class="btn2 women" >Women's</a>
+                <a href="" class="btn2 smart" onclick="" onmouseover="mOver(this)" onmouseout="mOut(this)" >Smart Bands</a>
+                <img src="images/womenwatch.png"  class="womenwatch" onclick="">
+                <a href="" class="btn2 women" onclick="" onmousedown="mDown(this)" onmouseup="mUp(this)">Women's</a>
             </div>
             </div>
             <div class="parent">
@@ -91,14 +99,17 @@
             </div>
             <div class="icons">
             <tr>
-            <a href="https://www.instagram.com/"><img src="images/insta_icon.png" class="instagram_icon"></a>
-            <a href="https://www.facebook.com/"><img src="images/facebook_icon.png" class="facebook_icon"></a>
-            <a href="https://www.twitter.com/"><img src="images/twitter_icon.png" class="twitter_icon"></a>
+            <a href="https://www.instagram.com/"><img src="images/insta_icon.png" class="instagram_icon" ></a>
+            <a href="https://www.facebook.com/"><img src="images/facebook_icon.png" class="facebook_icon" ></a>
+            <a href="https://www.twitter.com/"><img src="images/twitter_icon.png" class="twitter_icon" ></a>
             </tr>
            <div class="contact">
            <img src="images/contact.png"  class="contactus icon">
            <p>+214 495 5626</p>
            </div>
         </div>
+        <script src="index.js"></script>
      </body>
+     
+
 </html>
